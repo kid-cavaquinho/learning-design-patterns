@@ -1,6 +1,6 @@
 ﻿namespace Singleton
 {
-    internal class Studio
+    public sealed class Studio
     {
         // Keeping thread safety without using locks, there's obviously several ways to implement this, for a further explanation check: http://csharpindepth.com/Articles/General/Singleton.aspx
         private static readonly Studio instance = new Studio();
