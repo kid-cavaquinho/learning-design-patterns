@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Factory_Method</RootNamespace>
-    <AssemblyName>Factory_Method</AssemblyName>
+    <AssemblyName>Factory Method</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConcreteInstrumentFactory.cs" />
+    <Compile Include="Concretes\Fender.cs" />
+    <Compile Include="Concretes\Gibson.cs" />
+    <Compile Include="InstrumentType.cs" />
+    <Compile Include="InstrumentFactory.cs" />
+    <Compile Include="Interfaces\IFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

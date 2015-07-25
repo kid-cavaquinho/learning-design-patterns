@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Factory_Method.Interfaces;
+using System;
 
 namespace Factory_Method
 {
@@ -10,6 +7,15 @@ namespace Factory_Method
     {
         static void Main(string[] args)
         {
+            InstrumentFactory factory = new ConcreteInstrumentFactory();
+
+            IFactory fender = factory.GetInstrument(InstrumentType.Fender);
+            fender.Play();
+
+            IFactory gibson = factory.GetInstrument(InstrumentType.Gibson);
+            gibson.Play();
+
+            Console.ReadKey();
         }
     }
 }
