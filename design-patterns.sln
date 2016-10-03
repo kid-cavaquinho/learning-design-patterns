@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational", "Creational\Creational.csproj", "{6A6F75B2-D5FF-450C-9FD7-CD46C233AFBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Behavioral", "Behavioral\Behavioral.csproj", "{82F117E5-B1CD-4316-BA7D-755FD1959715}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A6F75B2-D5FF-450C-9FD7-CD46C233AFBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6F75B2-D5FF-450C-9FD7-CD46C233AFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6F75B2-D5FF-450C-9FD7-CD46C233AFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6F75B2-D5FF-450C-9FD7-CD46C233AFBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F117E5-B1CD-4316-BA7D-755FD1959715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F117E5-B1CD-4316-BA7D-755FD1959715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F117E5-B1CD-4316-BA7D-755FD1959715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F117E5-B1CD-4316-BA7D-755FD1959715}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
