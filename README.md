@@ -9,3 +9,7 @@ C# code representations of software development design patterns
 - [x] Singleton (With lazy loading and no locks, assuring thread safety)
 - [x] Builder
 - [x] Factory Method
+
+##Behavioral
+
+- [x] Strategy
