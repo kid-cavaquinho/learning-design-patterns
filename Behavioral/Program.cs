@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Behavioral.Strategy.Clients;
+using Behavioral.Strategy.Strategies;
 
 namespace Behavioral
 {
@@ -10,6 +8,16 @@ namespace Behavioral
     {
         static void Main(string[] args)
         {
+            //// Strategy pattern
+            AmplifierClient client = new AmplifierClient();
+
+            client.SetAmplifier(new AmpegStrategy());
+            Console.WriteLine("Ampeg: " + client.SpeakerConnection());
+            
+            client.SetAmplifier(new MarkbassStrategy());
+            Console.WriteLine("Markbass: " + client.SpeakerConnection());
+
+            Console.ReadKey();
         }
     }
 }
