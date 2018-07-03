@@ -8,7 +8,7 @@ namespace Behavioral
     {
         static void Main(string[] args)
         {
-            //// Strategy pattern
+            // Strategy pattern
             AmplifierClient client = new AmplifierClient();
 
             client.SetAmplifier(new AmpegStrategy());
@@ -16,6 +16,8 @@ namespace Behavioral
             
             client.SetAmplifier(new MarkbassStrategy());
             Console.WriteLine("Markbass: " + client.SpeakerConnection());
+
+
 
             Console.ReadKey();
         }
