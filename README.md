@@ -4,13 +4,14 @@ C# code representations of software development design patterns
 
 ### What can I find?
 
-##Creational
+Creational
 
 - [x] Singleton (With lazy loading and no locks, assuring thread safety)
 - [x] Builder
 - [x] Factory Method
 - [x] Prototype
 
-##Behavioral
+Behavioral
 
 - [x] Strategy
+- [x] Mediator
