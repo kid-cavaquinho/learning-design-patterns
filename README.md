@@ -1,4 +1,4 @@
-# Design-Patterns
+# Design patterns
 
 C# code representations of software development design patterns
 
@@ -15,3 +15,4 @@ Behavioral
 
 - [x] Strategy
 - [x] Mediator
+- [x] Chain of responsability
