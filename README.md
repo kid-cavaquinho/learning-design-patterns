@@ -16,3 +16,6 @@ Behavioral
 - [x] Strategy
 - [x] Mediator
 - [x] Chain of responsability
+
+Structural
+- [x] Facade

@@ -1,15 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Structural.Facade;
 
 namespace Structural
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            // Facade
+            var facade = new Stage();
+
+            var musician = new Musician {Name = "Jimi Hendrix", Instruments = new [] {"Guitar", "Bass", "Voice"}};
+            var result = facade.Approve(musician);
+            Console.WriteLine($"{musician.Name} has been {(result ? "approved" : "rejected")} to play");
+
+            Console.WriteLine("Press any key");
+            Console.ReadKey();
         }
     }
 }
