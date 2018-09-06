@@ -4,12 +4,13 @@ using Behavioral.Mediator;
 using Behavioral.Mediator.Concretes;
 using Behavioral.Strategy.Clients;
 using Behavioral.Strategy.Strategies;
+using Behavioral.Template_Method.Concretes;
 
 namespace Behavioral
 {
-    static class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //// Strategy pattern
             //AmplifierClient client = new AmplifierClient();
@@ -19,7 +20,7 @@ namespace Behavioral
 
             //client.SetAmplifier(new MarkbassStrategy());
             //Console.WriteLine("Markbass: " + client.SpeakerConnection());
-            
+
             //// Mediator
             //var mediator = new ConcreteMediator();
 
@@ -33,17 +34,24 @@ namespace Behavioral
             //ampeg.Send("Make it until eleven!");
 
             //// Chain of responsability            
-            var voxConcrete = new Vox();
-            var glockenklangConcrete = new Glockenklang();
+            //var voxConcrete = new Vox();
+            //var glockenklangConcrete = new Glockenklang();
 
-            voxConcrete.SetSuccessor(glockenklangConcrete);
+            //voxConcrete.SetSuccessor(glockenklangConcrete);
 
-            int[] levels = { -1, 2, 5, 1, 11, 4, 8, 6, 10, 3 };
+            //int[] levels = { -1, 2, 5, 1, 11, 4, 8, 6, 10, 3 };
 
-            foreach (var level in levels)
-            {
-                voxConcrete.Process(level);
-            }
+            //foreach (var level in levels)
+            //{
+            //    voxConcrete.Process(level);
+            //}
+
+            // Template method 
+            var stratocaster = new Stratocaster();
+            stratocaster.TemplateMethod();
+
+            var telecaster = new Telecaster();
+            telecaster.TemplateMethod();
 
             Console.WriteLine("Press any key");
             Console.ReadKey();
