@@ -16,6 +16,7 @@ Behavioral
 - [x] Strategy
 - [x] Mediator
 - [x] Chain of responsability
+- [x] Template Method
 
 Structural
 - [x] Facade
