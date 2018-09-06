@@ -58,10 +58,14 @@
     <Compile Include="Strategy\Interface\IAmplifier.cs" />
     <Compile Include="Strategy\Strategies\AmpegStrategy.cs" />
     <Compile Include="Strategy\Strategies\MarkbassStrategy.cs" />
+    <Compile Include="Template Method\AbstractGuitar.cs" />
+    <Compile Include="Template Method\Concretes\Stratocaster.cs" />
+    <Compile Include="Template Method\Concretes\Telecaster.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
